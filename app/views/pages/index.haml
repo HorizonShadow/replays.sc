@@ -1,5 +1,9 @@
 .ui.middle.aligned.center.aligned.grid.full-height
 	.column.upload-form#drop-zone
+		-if params[:res]
+			.ui.negative.message
+				.header Oops!
+				%p Looks like we don't support that file format.
 		%h2.ui.orange.image.header
 			Upload your replay
 		%form.ui.large.form#uploadForm(method="post" action="/" enctype="multipart/form-data")
