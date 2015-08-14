@@ -1,1 +1,1 @@
-# EverClan 
+# Simple replay hosting
