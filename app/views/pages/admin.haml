@@ -1,0 +1,11 @@
+.column
+	.ui.two.column.centered.grid.container
+		.column
+			%h4.ui.dividing.header Remove an existing player.
+		.column
+			%h4.ui.dividing.header Add a new player
+			%form.ui.form(method="post")
+				.field
+					%label Battle.net URL
+					%input(name="url" placeholder="http://" type="text")
+				%button.ui.button(type="submit") Submit

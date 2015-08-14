@@ -1,0 +1,10 @@
+.ui.middle.aligned.center.aligned.grid.full-height
+	.column.upload-form#drop-zone
+		%h2.ui.orange.image.header
+			Upload your replay
+		%form.ui.large.form#uploadForm(method="post" action="/" enctype="multipart/form-data")
+			.ui.stacked.segment
+				.field
+					%button.ui.fluid.large.orange.button#fileButton
+						Click to select
+					%input#fileInput(name="file" type="file")

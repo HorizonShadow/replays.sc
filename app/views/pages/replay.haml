@@ -1,0 +1,18 @@
+.ui.middle.aligned.center.aligned.grid.full-height
+	.column.upload-form.left.aligned
+		%h2.ui.orange.image.header
+			You've found a replay!
+		.ui.fluid.card
+			.content
+				=@replay.name
+			.image
+				%img.ui.medium.circular.image(src="/img/supson.gif")
+			.content
+				%span.right.floated
+					-@players.each_slice((@players.size / 2.0).round).to_a.first.each do |p|
+						=p.name
+				-@players.each_slice((@players.size / 2.0).round).to_a[1].each do |p|
+					=p.name
+			.extra.content
+				%a(href="/#{@replay.id}/download")
+					%button.ui.large.fluid.orange.button Download
